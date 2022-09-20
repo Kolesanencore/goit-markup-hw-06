@@ -297,6 +297,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   cursor: pointer;
+  border: none;
 }
 
 .button:hover,
@@ -969,4 +970,5 @@ body {
 
 .form-button {
   padding: 10px 52px;
+  border: none;
 }
