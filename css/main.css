@@ -753,7 +753,7 @@ body {
 }
 
 .modal-close-btn {
-  color: #ffffff;
+  color: transparent;
 }
 
 .modal-close-btn:hover,
@@ -813,7 +813,7 @@ body {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
 .subscribe-form-input {
@@ -842,25 +842,6 @@ body {
 
 .subscribe-button .icon-send {
   margin-left: 10px;
-}
-
-.subscribe-form-input:hover,
-.subscribe-form-input:focus,
-.subscribe-form-input:active {
-  border-color: #2196f3;
-  outline: 2px solid #2196f3;
-}
-.subscribe-form-input:hover::-moz-placeholder,
-.subscribe-form-input:focus::-moz-placeholder {
-  color: #2196f380;
-}
-.subscribe-form-input:hover:-ms-input-placeholder,
-.subscribe-form-input:focus:-ms-input-placeholder {
-  color: #2196f380;
-}
-.subscribe-form-input:hover::placeholder,
-.subscribe-form-input:focus::placeholder {
-  color: #2196f380;
 }
 
 .subscribe-form-wrapper {
@@ -917,6 +898,8 @@ body {
 .form-input:focus-visible {
   border: 1px solid #2196f3;
   outline: none;
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-icon {
@@ -928,6 +911,8 @@ body {
 .form-input:hover + .form-icon,
 .form-input:focus-visible + .form-icon {
   fill: #2196f3;
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-comment {
@@ -957,6 +942,7 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+
 .form-comment::placeholder {
   font-size: 12px;
   line-height: 14px;
